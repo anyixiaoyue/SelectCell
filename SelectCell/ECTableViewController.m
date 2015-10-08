@@ -20,13 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [TableViewCell registerNibToTableView:self.tableview];
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 50, WINDOW_WIDTH, WINDOW_HEIGHT-50)];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     [self.view addSubview:self.tableview];
     
-    [TableViewCell registerNibToTableView:self.tableview];
+    //[TableViewCell registerNibToTableView:self.tableview];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,7 +53,7 @@
 - (BOOL)isExtendedCellIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath && self.selectedRowIndexPath) {
-        if (indexPath.row == self.selectedRowIndexPath.row && indexPath.section == self.selectedRowIndexPath.section) {
+        if (indexPath.row == self.selectedRowIndexPath.row + 1 && indexPath.section == self.selectedRowIndexPath.section) {
             return YES;
         }
     }
@@ -135,7 +135,7 @@
     
     if ([self isExtendedCellIndexPath:indexPath]) {
         NSString *identifier = [TableViewCell reusableIdentifier];
-        TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        TableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:identifier owner:self options:nil]objectAtIndex:0];
         [cell addcontentView:[self viewForContainerAtIndexPath:indexPath]];
         return cell;
     }

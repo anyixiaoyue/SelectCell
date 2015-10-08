@@ -11,9 +11,4 @@
 @interface DefualtTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 
-+ (NSString *)reusableIdentifier;
-+ (void)registerNibToTableView:(UITableView *)tableView;
-
-- (void)addcontentView:(UIView *)contentView;
-
 @end
