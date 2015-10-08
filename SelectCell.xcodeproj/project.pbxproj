@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94645AD31BBA32FC0058D625 /* DefualtTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94645AD11BBA32FC0058D625 /* DefualtTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		94645AD41BBA32FC0058D625 /* DefualtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94645AD21BBA32FC0058D625 /* DefualtTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		94645AD31BBA32FC0058D625 /* DefualtTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94645AD11BBA32FC0058D625 /* DefualtTableViewCell.m */; };
+		94645AD41BBA32FC0058D625 /* DefualtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94645AD21BBA32FC0058D625 /* DefualtTableViewCell.xib */; };
 		94D1DFFC1BB91429009757CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1DFFB1BB91429009757CB /* main.m */; };
 		94D1DFFF1BB91429009757CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1DFFE1BB91429009757CB /* AppDelegate.m */; };
 		94D1E0021BB91429009757CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0011BB91429009757CB /* ViewController.m */; };
@@ -18,9 +18,9 @@
 		94D1E00D1BB91429009757CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D1E00B1BB91429009757CB /* LaunchScreen.storyboard */; };
 		94D1E0181BB91429009757CB /* SelectCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0171BB91429009757CB /* SelectCellTests.m */; };
 		94D1E0231BB91429009757CB /* SelectCellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0221BB91429009757CB /* SelectCellUITests.m */; };
-		94D1E0321BB914A0009757CB /* ECTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0311BB914A0009757CB /* ECTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		94D1E0361BB91624009757CB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0341BB91624009757CB /* TableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		94D1E0371BB91624009757CB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D1E0351BB91624009757CB /* TableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		94D1E0321BB914A0009757CB /* ECTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0311BB914A0009757CB /* ECTableViewController.m */; };
+		94D1E0361BB91624009757CB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E0341BB91624009757CB /* TableViewCell.m */; };
+		94D1E0371BB91624009757CB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D1E0351BB91624009757CB /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,7 +239,6 @@
 				TargetAttributes = {
 					94D1DFF61BB91429009757CB = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = LL4L8KD44W;
 					};
 					94D1E0121BB91429009757CB = {
 						CreatedOnToolsVersion = 7.0;
@@ -454,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SelectCell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SelectCell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
